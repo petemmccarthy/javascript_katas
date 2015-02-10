@@ -37,7 +37,13 @@ function removeNullsFromArray(array) {
 // Question 4
 
 function removeNullsAndFalseFromArray(array) {
-
+  var result = [];
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] !== null && array[i] !== false) {
+      result.push(array[i]);
+    };
+  };
+  return result;
 };
 
 // Question 5
