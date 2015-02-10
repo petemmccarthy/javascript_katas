@@ -1,7 +1,13 @@
 // Question 1
 
 function selectElementsStartingWithE(array) {
-
+  var result = [];
+  for ( var i = 0; i < array.length; i++) {
+    if (array[i].charAt(0) === 'e') {
+      result.push(array[i]);
+    };
+  };
+  return result;
 };
 
 // Question 2

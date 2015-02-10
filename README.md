@@ -6,7 +6,7 @@ Javascript katas with Jasmine tests (same as Ruby week9 test but in JS!)
 Clone the repository:
 
 ```
-$ git clone git@github.com/petermccarthy49/javascript_katas.git
+$ git clone https://github.com/petermccarthy49/javascript_katas.git
 ```
 
 Change into the directory and run the Jasmine tests:
