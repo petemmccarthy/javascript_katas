@@ -25,18 +25,18 @@ describe('JavaScript Refresher Questions', function() {
       expect(reverseEveryElementInArray(testArray)).toEqual(['eeffoc', 'aet', 'ekac', 'einworb']);
   });
 
-  xit('6. dropFirstThreeElements: return array with first three elements removed', function() {
+  it('6. dropFirstThreeElements: return array with first three elements removed', function() {
     testArray = [1,2,3,4,5,6]
     expect(dropFirstThreeElements(testArray)).toEqual([4,5,6]);
   });
 
-  xit('7. addElementToBeginningOfArray: add element to beginning of an array', function() {
+  it('7. addElementToBeginningOfArray: add element to beginning of an array', function() {
       testArray = [1,2,3];
       newElement = 'a';
       expect(addElementToBeginningOfArray(testArray, newElement)).toEqual(['a',1,2,3]);
   });
 
-  xit('8. sortArrayByLastLetterOfEachWord: return array sorted by last letter of each string element', function() {
+  it('8. sortArrayByLastLetterOfEachWord: return array sorted by last letter of each string element', function() {
     testArray = ['oatmeal', 'coffee', 'toast', 'tea'];
     expect(sortArrayByLastLetterOfEachWord(testArray)).toEqual(['tea', 'coffee', 'oatmeal', 'toast'])
   });
