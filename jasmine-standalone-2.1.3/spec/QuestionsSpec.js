@@ -10,7 +10,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(selectElementsStartingWithVowel(testArray)).toEqual(['open', 'also', 'ice', 'even']);
   });
 
-  xit('3. removeNullsFromArray: remove null elements and return array', function() {
+  it('3. removeNullsFromArray: remove null elements and return array', function() {
     testArray = [null, null, true, false, 1, null, 2, 'x', null];
     expect(removeNullsFromArray(testArray)).toEqual([true, false, 1, 2, 'x']);
   });

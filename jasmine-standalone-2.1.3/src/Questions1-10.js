@@ -25,7 +25,13 @@ function selectElementsStartingWithVowel(array) {
 // Question 3
 
 function removeNullsFromArray(array) {
-
+  var result = [];
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] !== null) {
+      result.push(array[i]);
+    };
+  };
+  return result;
 };
 
 // Question 4
