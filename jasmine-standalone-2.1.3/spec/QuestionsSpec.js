@@ -56,27 +56,27 @@ describe('JavaScript Refresher Questions', function() {
     expect(separateArrayIntoEvenAndOddNumbers(testArray)).toEqual([[2,4,6], [1,3,5,7]]);
   });
 
-  xit('12. numberOfElementsThatArePalindromes: return number of elements in an array that are palindromes', function() {
+  it('12. numberOfElementsThatArePalindromes: return number of elements in an array that are palindromes', function() {
     testArray = ['pop', 'coffee', 'level', 'hello', 'wow'];
       expect(numberOfElementsThatArePalindromes(testArray)).toEqual(3);
   });
 
-  xit('13. shortestWordInArray: return shortest string in an array', function() {
+  it('13. shortestWordInArray: return shortest string in an array', function() {
       testArray = ['muffin', 'scone', 'tea', 'coffee', 'cafe', 'chocolate'];
       expect(shortestWordInArray(testArray)).toEqual('tea');
   });
 
-  xit('14. longestWordInArray: return longest string in an array', function() {
+  it('14. longestWordInArray: return longest string in an array', function() {
     testArray = ['muffin', 'scone', 'tea', 'coffee', 'cafe', 'chocolate'];
     expect(longestWordInArray(testArray)).toEqual('chocolate');
   });
 
-  xit('15. arrayTotal: return total of number elements in an array', function() {
+  it('15. arrayTotal: return total of number elements in an array', function() {
     testArray = [1,3,5,9,10];
     expect(arrayTotal(testArray)).toEqual(28);
   });
 
-  xit('16. doubleArray: return duplicate of array within a single array and NOT sorted', function() {
+  it('16. doubleArray: return duplicate of array within a single array and NOT sorted', function() {
     testArray = [1,2,3]
     expect(doubleArray(testArray)).toEqual([1,2,3,1,2,3]);
   });
