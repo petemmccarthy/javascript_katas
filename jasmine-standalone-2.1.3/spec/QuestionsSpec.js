@@ -51,7 +51,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(makeNumberNegative(-3)).toEqual(-3);
   });
 
-  xit('11. separateArrayIntoEvenAndOddNumbers: return nested array with one array of even numbers, one array of odd numbers', function() {
+  it('11. separateArrayIntoEvenAndOddNumbers: return nested array with one array of even numbers, one array of odd numbers', function() {
     testArray = [1,2,3,4,5,6,7]
     expect(separateArrayIntoEvenAndOddNumbers(testArray)).toEqual([[2,4,6], [1,3,5,7]]);
   });

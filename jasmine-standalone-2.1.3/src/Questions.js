@@ -96,9 +96,21 @@ function makeNumberNegative(number) {
 };
 
 // Question 11
-
+  
 function separateArrayIntoEvenAndOddNumbers(array) {
+  var result = [];
+  var even = array.filter(evenNos);
+  var odd = array.filter(oddNos);
+  result.push(even, odd);
+  return result
+};
 
+function evenNos(number) {
+  return number % 2 === 0;
+};
+
+function oddNos(number) {
+  return number % 2 === 1;
 };
 
 // Question 12
