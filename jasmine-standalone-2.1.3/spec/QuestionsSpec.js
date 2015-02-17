@@ -93,7 +93,7 @@ describe('JavaScript Refresher Questions', function() {
     expect(removeElementsGreaterThanFive(testArray)).toEqual([1,2,3,4,1,5,4]);
   });
 
-  xit('19. convertArrayToObject: convert an array into an object with index as the key', function() {
+  it('19. convertArrayToObject: convert an array into an object with index as the key', function() {
     testArray = ['a','b','c'];
     expect(convertArrayToObject(testArray)).toEqual({0: 'a', 1: 'b', 2:'c'});
   });

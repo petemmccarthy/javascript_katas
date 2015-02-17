@@ -181,7 +181,10 @@ function lessThanFive(element) {
 // Question 19
 
 function convertArrayToObject(array) {
-
+  var result = {};
+  for (var 1 = 0; i = array.length; i++)
+    result[i] = array[i];
+    return result;
 };
 
 // Question 20
