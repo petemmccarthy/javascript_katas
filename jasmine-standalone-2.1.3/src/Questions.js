@@ -182,7 +182,7 @@ function lessThanFive(element) {
 
 function convertArrayToObject(array) {
   var result = {};
-  for (var 1 = 0; i = array.length; i++)
+  for (var i = 0; i < array.length; i++)
     result[i] = array[i];
     return result;
 };
@@ -190,25 +190,38 @@ function convertArrayToObject(array) {
 // Question 20
 
 function getLettersInArrayOfWords(array) {
-
+  var newArray = [];
+  var result = [];
+  for(i= 0; i < array.length; i++) {
+    newArray.push(array[i].split(''));
+  };
+  return (result.concat.apply(result, newArray)).sort();
 };
 
 // Question 21
 
 function swapKeysAndValuesInObject(object) {
-
+  var result = {};
+  for(var key in object) {
+    result[object[key]] = parseInt(key);
+  };
+  return result;
 };
 
 // Question 22
 
 function addKeysAndValues(object) {
-
+  var result = 0;
+  for(var key in object) {
+    result += parseInt(key) + parseInt(object[key])
+  };
+  return result;
 };
 
 // Question 23
 
 function removeCapitalLettersFromString(string) {
-
+  
 };
 
 // Question 24
