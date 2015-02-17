@@ -161,17 +161,21 @@ function doubleArray(array) {
 // Question 17
 
 function averageOfArray(array) {
-
+  var result = array.reduce(function(a, b) {
+    return a + b;
+  });
+  return parseFloat((result / array.length).toFixed(1));
 };
 
 // Question 18
 
 function removeElementsGreaterThanFive(array) {
-
+  var result = array.filter(lessThanFive);
+    return result;
 };
 
-function isLessThanFive(element) {
-
+function lessThanFive(element) {
+  return element <=5;
 };
 
 // Question 19

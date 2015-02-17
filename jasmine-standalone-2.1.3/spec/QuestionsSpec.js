@@ -81,14 +81,14 @@ describe('JavaScript Refresher Questions', function() {
     expect(doubleArray(testArray)).toEqual([1,2,3,1,2,3]);
   });
 
-  xit('17. averageOfArray: return average of number elements within an array', function() {
+  it('17. averageOfArray: return average of number elements within an array', function() {
     testArrayA = [8,5,17,24,1,5];
     testArrayB = [5,25,10];
     expect(averageOfArray(testArrayA)).toEqual(10);
     expect(averageOfArray(testArrayB)).toEqual(13.3);
   });
 
-  xit('18. removeElementsGreaterThanFive: return array with elements less than or equal to 5', function() {
+  it('18. removeElementsGreaterThanFive: return array with elements less than or equal to 5', function() {
     testArray = [1,2,6,8,3,4,1,6,10,5,22,4];
     expect(removeElementsGreaterThanFive(testArray)).toEqual([1,2,3,4,1,5,4]);
   });
