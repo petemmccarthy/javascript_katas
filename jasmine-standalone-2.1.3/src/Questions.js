@@ -221,25 +221,40 @@ function addKeysAndValues(object) {
 // Question 23
 
 function removeCapitalLettersFromString(string) {
-  
+  var words = string.split(' ');
+  var tempArray = []
+  for(i = 0; i < words.length; i++) {
+    var noUpperCase = words[i].replace( /[A-Z]/g, '')
+    tempArray.push(noUpperCase);
+  };
+  return tempArray.join(' ');
 };
 
 // Question 24
 
 function everyPossiblePairing(array) {
-
+  var result = [];
+    for(var a = 0; a < array.length - 1; a++) {
+      for(var b = 1; b < array.length; b++) {
+        if (array[a] != array[b]) {
+          pairs = [array[a], array[b]];
+          result.push(pairs);
+        };
+      };
+    };
+  return result;
 };
 
 // Question 25
 
 function roundUpNumber(number) {
-
+  return Math.ceil(number);
 };
 
 // Question 26
 
 function roundDownNumber(number) {
-
+  return Math.floor(number);
 };
 
 // Question 27
