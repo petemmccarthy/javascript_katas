@@ -184,9 +184,11 @@ describe('JavaScript Refresher Questions', function() {
     numberA = 6;
     numberB = 25;
     numberC = 87;
+    numberD = 187;
     expect(convertToRomanNumerals(numberA)).toEqual('VI');
     expect(convertToRomanNumerals(numberB)).toEqual('XXV');
-    expect(convertToRomanNumerals(numberC)).toEqual('LXXXVII')
+    expect(convertToRomanNumerals(numberC)).toEqual('LXXXVII');
+    expect(convertToRomanNumerals(numberD)).toEqual('CLXXXVII')
   });
 
 });

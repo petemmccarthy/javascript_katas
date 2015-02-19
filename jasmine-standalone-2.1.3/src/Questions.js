@@ -338,7 +338,9 @@ function convertToRomanNumerals(number) {
     return 'n/a'
   } else if (number <= 9) {
     return oneToTen[numberAsArray[0]];
-  } else {
+  } else if (number < 99) { 
     return tens[numberAsArray[0]] + oneToTen[numberAsArray[1]];
+  } else {
+    return hundreds[numberAsArray[0]] + tens[numberAsArray[1]] + oneToTen[numberAsArray[2]];
   };
 };
