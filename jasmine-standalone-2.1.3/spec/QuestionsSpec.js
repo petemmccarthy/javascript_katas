@@ -133,24 +133,24 @@ describe('JavaScript Refresher Questions', function() {
     expect(roundDownNumber(8.1623)).toEqual(8);
   });
 
-  xit('27. formatDateNicely: format date in a user-friendly format', function() {
+  it('27. formatDateNicely: format date in a user-friendly format', function() {
     date = new Date(2015, 02, 24)
     expect(formatDateNicely(date)).toEqual('24-Mar-2015');
   });
 
-  xit('28. getDomainNameFromEmailAddress: return domain name of email address without @ or .com', function() {
+  it('28. getDomainNameFromEmailAddress: return domain name of email address without @ or .com', function() {
     emailA = 'test@emailprovider.com';
     emailB = 'test@emailme.co.uk'
     expect(getDomainNameFromEmailAddress(emailA)).toEqual('emailprovider');
     expect(getDomainNameFromEmailAddress(emailB)).toEqual('emailme');
   });
 
-  xit('29. titleizeString: return string with first letter of each word capitalised, except for certain words (and, in, the, of, a, an, to)', function() {
+  it('29. titleizeString: return string with first letter of each word capitalised, except for certain words (and, in, the, of, a, an, to)', function() {
     testString = 'the definitive guide to international relations in the 21st century';
     expect(titleizeString(testString)).toEqual('The Definitive Guide To International Relations In The 21st Century');
   });
 
-  xit('30. checkStringForSpecialCharacters: return true or false if string contains non-alphanumerical characters', function() {
+  it('30. checkStringForSpecialCharacters: return true or false if string contains non-alphanumerical characters', function() {
     stringA = 'abcd1234'
     stringB = 'abcd1234!@#$'
     expect(checkStringForSpecialCharacters(stringA)).toBe(false);

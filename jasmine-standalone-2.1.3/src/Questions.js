@@ -260,25 +260,35 @@ function roundDownNumber(number) {
 // Question 27
 
 function formatDateNicely(date) {
-
+  var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+  var currentMonth = months[date.getMonth()]
+  return date.getDate()+ '-' +currentMonth+ '-' +date.getFullYear();
 };
 
 // Question 28
 
 function getDomainNameFromEmailAddress(email) {
-
+  return email.split('@')[1].split('.')[0];
 };
 
 // Question 29
 
 function titleizeString(string) {
-
+  return string.toLowerCase().replace(/^.|\s\S/g, function(a) {
+    return a.toUpperCase();
+  });
 };
 
 // Question 30
 
 function checkStringForSpecialCharacters(string) {
-
+  if (string.match(/[^A-Za-z0-9\-]/)) {
+    return true;
+    }
+      else
+    {
+      return false;
+  }
 };
 
 // Question 31
