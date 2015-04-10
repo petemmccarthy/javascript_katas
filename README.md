@@ -1,5 +1,6 @@
 # Javascript katas
-Javascript katas with Jasmine tests (same as Ruby week9 test but in JS!)
+
+Javascript kata exercises tested using Jasmine to learn/refresh my Javascript knowledge.
 
 ##### Instructions
 
